@@ -1,0 +1,70 @@
+$Black: #000;
+$White: #fff;
+$MacaroniAndCheese: #ffb699;
+$LightSalmon: #ffa07a;
+$AntiqueWhite: #faebd7;
+
+@mixin flex($fd, $bg: none, $ta: left) {
+  display: flex;
+  justify-content: center;
+  flex-direction: $fd;
+  background-color: $bg;
+  text-align: $ta;
+}
+
+@mixin grid($col) {
+  display: grid;
+  grid-template-columns: repeat($col, 1fr);
+  grid-template-rows: auto;
+}
+
+@mixin title {
+  font-size: 4rem;
+  padding-bottom: 2rem;
+}
+
+@mixin text($fontSize: 1rem, $ml: 0, $mr: 0) {
+  font-size: $fontSize;
+  margin-left: $ml;
+  margin-right: $mr;
+}
+
+@mixin text-card($fontSize: 1rem, $mb: 0) {
+  font-size: $fontSize;
+  margin-bottom: $mb;
+}
+
+@mixin button {
+  color: $Black;
+  display: inline-block;
+  border: none;
+  background-color: $MacaroniAndCheese;
+  &:hover {
+    background-color: $LightSalmon;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+}
+
+@mixin button-page {
+  @include button;
+  margin-top: 2rem;
+  padding: 0.6rem 2rem;
+}
+
+@mixin left-container($mr: 2rem) {
+  width: 50%;
+  text-align: right;
+  margin-right: $mr;
+  padding-top: 6rem;
+}
+
+@mixin right-container($ta: center) {
+  width: 50%;
+  text-align: $ta;
+}
+
+@mixin image($w: 100%, $pt: 5rem) {
+  width: $w;
+  padding-top: $pt;
+}

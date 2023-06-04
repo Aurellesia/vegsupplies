@@ -1,0 +1,121 @@
+<div class="shop-container">
+  <p class="title">Welcome to Our Shop!</p>
+  <hr class="line" />
+  <div class="card-container">
+    <% product.forEach(item => { %>
+    <div class="card-body">
+      <img
+        class="card-image"
+        src="images/shop/<%= item.image %> "
+        alt="cucumber"
+      />
+      <p class="card-name"><%= item.name %></p>
+      <p class="description"><%= item.description %></p>
+      <div class="buy-container">
+        <p class="price"><%= item.price %></p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+    <% }) %>
+
+    <!-- <div class="card-body">
+      <img class="card-image" src="images/shop/cucumber.jpg" alt="cucumber" />
+      <p class="card-name">CUCUMBER</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img class="card-image" src="images/shop/chili.jpg" alt="cucumber" />
+      <p class="card-name">CHILI</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img class="card-image" src="images/shop/tomato.jpg" alt="cucumber" />
+      <p class="card-name">TOMATO</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img class="card-image" src="images/shop/cabbage.jpg" alt="cucumber" />
+      <p class="card-name">CABBAGE</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img class="card-image" src="images/shop/garlic.jpg" alt="cucumber" />
+      <p class="card-name">GARLIC</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img
+        class="card-image"
+        src="images/shop/small-tomato.jpg"
+        alt="cucumber"
+      />
+      <p class="card-name">SMALL TOMATO</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img class="card-image" src="images/shop/broccoli.jpg" alt="cucumber" />
+      <p class="card-name">BROCCOLI</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div>
+
+    <div class="card-body">
+      <img class="card-image" src="images/shop/peas.jpg" alt="cucumber" />
+      <p class="card-name">PEAS</p>
+      <p class="description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </p>
+      <div class="buy-container">
+        <p class="price">$5</p>
+        <button class="btn-buy">BUY NOW</button>
+      </div>
+    </div> -->
+  </div>
+</div>

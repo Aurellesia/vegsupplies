@@ -1,0 +1,25 @@
+.about-image {
+  @include image($pt: 0);
+}
+
+.about-container {
+  @include flex(row, $AntiqueWhite);
+  margin-top: -2rem;
+  height: 70vh;
+
+  .title-text {
+    @include left-container;
+    padding-top: 7rem;
+    .about-title {
+      @include title;
+    }
+  }
+  .about-text {
+    @include right-container($ta: left);
+    margin-left: 2rem;
+    padding-top: 6rem;
+    .text {
+      @include text($mr: 6rem);
+    }
+  }
+}

@@ -1,0 +1,27 @@
+.banner {
+  @include flex(row, $AntiqueWhite);
+
+  .title-banner-container {
+    align-self: center;
+
+    .title-banner {
+      margin-top: 15%;
+      margin-left: 2rem;
+
+      .title {
+        @include title;
+      }
+      .intro {
+        margin: 1rem 0;
+      }
+      .btn-banner {
+        @include button-page;
+      }
+    }
+  }
+  .img-banner-container {
+    .img-banner {
+      height: 100vh;
+    }
+  }
+}

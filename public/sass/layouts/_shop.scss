@@ -1,0 +1,54 @@
+.shop-container,
+.card-body {
+  @include flex(column);
+}
+
+.shop-container {
+  padding: 5rem 3rem 0 3rem;
+  .title {
+    @include title;
+  }
+  .line {
+    margin-top: 2rem;
+  }
+
+  .card-container {
+    @include grid(4);
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+
+    .card-body {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin: 1rem;
+      width: 15rem;
+
+      .card-image {
+        @include image($pt: 0);
+      }
+
+      .card-name {
+        @include text-card(1.5rem, 1rem);
+      }
+
+      .description {
+        @include text-card(0.9rem, 1rem);
+      }
+
+      .buy-container {
+        @include flex(row);
+
+        .price {
+          @include text-card(1.5rem, 1rem);
+          width: 50%;
+        }
+
+        .btn-buy {
+          @include button;
+          width: 50%;
+          padding: 0.4rem 1.4rem;
+        }
+      }
+    }
+  }
+}

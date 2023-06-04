@@ -1,0 +1,82 @@
+.home-text-container,
+.vegies-image-container {
+  @include left-container;
+}
+
+.home-image-container,
+.fruits-image-container {
+  @include right-container;
+}
+
+.btn-about,
+.btn-vegies,
+.btn-fruits,
+.btn-contact {
+  @include button-page;
+}
+
+.home-title,
+.vegies-title,
+.fruits-title {
+  @include title;
+}
+
+.home-container {
+  @include flex(row, $AntiqueWhite);
+  height: 80%;
+  .home-text {
+    @include text($ml: 7rem);
+  }
+  .home-image {
+    @include image($w: 60%);
+  }
+}
+
+.vegies-container {
+  @include flex(row);
+  height: 100vh;
+  .vegies-image-container {
+    margin-left: 2rem;
+    .vegies-image {
+      @include image;
+    }
+  }
+
+  .vegies-text-container {
+    @include right-container($ta: left);
+    padding-top: 16rem;
+    .vegies-text {
+      @include text($ml: 5rem, $mr: 3rem);
+    }
+  }
+}
+
+.fruits-container {
+  @include flex(row, $AntiqueWhite);
+  height: 80%;
+  .fruits-text-container {
+    @include left-container($mr: 5rem);
+    .fruits-text {
+      @include text($ml: 5rem);
+    }
+  }
+  .fruits-image {
+    @include image($w: 90%, $pt: 2rem);
+  }
+}
+
+.galery-container {
+  @include grid(3);
+  .galery-image {
+    @include image($w: 27.05rem, $pt: 0);
+  }
+}
+
+.contact-container {
+  @include flex(column, $ta: center);
+  align-self: center;
+  padding: 5rem;
+  .contact-text {
+    @include text($fontSize: 4rem);
+  }
+}
